@@ -9,15 +9,15 @@
             {{ end }}
         </video>
         {{ if .Site.Params.twitter.enable }}
-            <div class="topright"> 
+            <div class="topright">
                 {{ partial "twitter-feed.html" . }}
-            </div>        
+            </div>
         {{ end }}
         <div class="topleft">
             {{ if .Site.Params.title }}
                 <p>{{ .Site.Params.title }}</p>
             {{ else }}
-                <p>Coming Soon HUGO</p>
+                <p></p>
             {{ end }}
         </div>
         <div class="middle">
@@ -26,7 +26,6 @@
             {{ else }}
                 <h1>COMING SOON</h1>
             {{ end }}
-            <hr>
             <p id="demo"></p>
             <div id="countdown" data-release="{{ .Site.Params.release }}"></div>
         </div>
